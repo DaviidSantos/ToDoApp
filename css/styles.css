@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'League Spartan', sans-serif;
+    background-color: rgb(58, 71, 100);
+    color: rgb(234, 227, 220);
+
+}
+
+.container{
+    margin: 10px auto;
+    width: 35%;
+    padding: 60px 0;
+}
+
+.input-container{
+    margin: 15px 0 30px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+input{
+    width: 80%;
+    background: rgb(234, 227, 220);
+    border: none;
+    border-radius: 8px;
+    box-shadow: rgb(180 165 151) 0px 3px 0px 0px; 
+}
+
+input:focus{
+    outline: none;
+}
+
+button{
+    color: rgb(234, 227, 220); 
+    background-color: rgb(99, 112, 151); 
+    box-shadow: rgb(64, 78, 114) 0px 3px 0px 0px; 
+    top: 0px;
+    font-weight: bold;
+}
+
+.pressionado{
+    box-shadow: rgb(64, 78, 114) 0px 1px 0px 0px;
+    top: 2px;
+    transform: translateY(2px);
+}
+
+input, .input-container button{
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+}
+
+li{
+    padding: 10px 0;
+    list-style: none;
+    font-size: 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.apagar{
+    color: rgb(24, 32, 52);
+    background-color: rgb(234, 227, 220);
+    box-shadow: rgb(180 165 151) 0px 3px 0px 0px; 
+    top: 0px;
+    font-weight: bold;
+    padding: 11px 20px;
+    border-radius: 10px;
+    border: none;
+}
+
+
+@media (max-width: 810px){
+    .container{
+        width: 500px;
+    }
+}
+
+@media (max-width: 480px){
+    .container{
+        width: 90%;
+    }
+
+    .input-container{
+        flex-direction: column;
+    }
+
+    input{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    li{
+        max-width: 100%;
+    }
+}
